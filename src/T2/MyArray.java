@@ -13,19 +13,28 @@ import java.util.Arrays;
 
 public class MyArray <E> {
     public static void main(String[] args) {
-        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        ArrayList<String> names = new ArrayList<>(Arrays.asList("Jane", "Tom", "Bob"));
-        ArrayList<Character> alphabet = new ArrayList<>(Arrays.asList('a', 'b', 'c'));
+        Integer[]numbers = {1, 2, 3, 4, 5};
+        String[] names = {"Jane", "Tom", "Bob"};
+        Character[] alphabet = {'a', 'b', 'c'};
 
         MyArray.listAll(numbers);
         MyArray.listAll(names);
         MyArray.listAll(alphabet);
     }
 
-    public static <E> void listAll(ArrayList <E> list){
-        for(int i=0; i<list.size(); i++){
-                System.out.print(list.get(i) + " ");
+    public static <E> void listAll(E [] list){
+        for(E element: list){
+                System.out.print(element + " ");
         }
         System.out.println();
     }
+
+    /*
+    public static <E> void listAll(E [] list){
+        for(int i=0; i<list.length; i++){
+                System.out.print(list[i] + " ");
+        }
+        System.out.println();
+    }
+    */
 }
