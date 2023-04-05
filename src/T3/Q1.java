@@ -102,11 +102,3 @@ class CandyMachine{
     }
 }
 
-/* Class -> Instance variables || Method
-* Dispenser -> name, cost, quantity || holdAndRelease()
-* CashRegister -> balance || addCash(), getChange()
-* CandyMachine -> DispenserCandies, DispenserChips, DispenserGum, DispenserCookies, CashRegister
-* || displayPrice(), showSelection(), selectProduct(), acceptMoney()
-*
-*
-* */
